@@ -2,10 +2,61 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$gold: #f5d164
+$gray: #616161
+$black: #000
+
 *,
 *::before,
 *::after
   margin: 0
   padding: 0
   box-sizing: border-box
+  
+body
+  border-top: 50px solid $gray
+  
+header h1
+  font-size: 36px
+  font-family: pt serif
+  text-align: center
+  font-weight: 100
+  font-style: normal
+  letter-spacing: 1px
+  text-rendering: optimizeLegibility
+  border-top: 5px solid $gold
+  padding-top: 25px
+  
+header p
+  font-size: 18px
+  font-family: pt serif
+  font-style: italic
+  text-align: center
+  color: $black
+  letter-spacing: 1px
+  text-indent: 130px
+  
+header a
+  text-decoration: none
+  color: $gold
+  
+header p a
+  color: $black
+  
+nav
+  border-top: 2px solid $gray
+  margin-top: 25px
+  
+nav ul
+  text-align: center
+  margin-top: 10px
+  
+nav li
+  display: inline
+  font-family: pt serif
+  font-size: 24px
+  margin: 100px
+  color: $gold
+  
+  
   

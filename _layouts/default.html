@@ -12,18 +12,31 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   </head>
+  
   <body>
-
-    {% include header.html %}
+      
+    <header>
+    
+          <h1><a class="site-title" href="{{ site.baseurl }}/">Sales Honey</a></h1>
+          <p><a class="site-title" href="{{ site.baseurl }}/">Sweeten your deals.</a></p>      
+        </a>
+    
+        <nav>
+          <ul>
+            <li><a href="#">About</a> 
+            </li>
+            <li> <a href="#">Posts</a>
+            </li>
+          </ul>
+        </nav>
+    
+    </header>
 
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
-
-    {% include footer.html %}
-
   </body>
 
 </html>
